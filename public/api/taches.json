@@ -1,0 +1,11 @@
+
+[
+  { "id": 1, "title": "Finir la maquette du portfolio", "completed": false },
+  { "id": 2, "title": "Réviser les Signals Angular", "completed": true },
+  { "id": 3, "title": "Préparer le README GitHub", "completed": false },
+  { "id": 4, "title": "Tester le site sur mobile", "completed": false },
+  { "id": 5, "title": "Compresser les images du projet", "completed": true },
+  { "id": 6, "title": "Rédiger le paragraphe À propos", "completed": false },
+  { "id": 7, "title": "Vérifier le score Lighthouse", "completed": false },
+  { "id": 8, "title": "Déployer sur Vercel", "completed": false }
+]

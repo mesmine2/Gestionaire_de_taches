@@ -1,0 +1,13 @@
+.tache-list { width: 100%; }
+.etat {
+  text-align: center;
+  color: var(--muted);
+  padding: 2rem 1rem;
+}
+.erreur { color: var(--danger); }
+.compteur {
+  text-align: right;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 0.8rem;
+}

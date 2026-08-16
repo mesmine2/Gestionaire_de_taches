@@ -1,0 +1,21 @@
+<div class="tache-list">
+  <app-tache-form (ajouter)="onAjouter($event)" />
+
+  @if (tachesRes.isLoading()) {
+    <p class="etat">Chargement des tâches…</p>
+  } @else if (tachesRes.error()) {
+    <p class="etat erreur">Impossible de charger les tâches depuis le serveur.</p>
+  } @else if (taches().length === 0) {
+    <p class="etat">Aucune tâche pour le moment.</p>
+  } @else {
+    @for (t of taches(); track t.id) {
+      <app-tache-item
+        [tache]="t"
+        (toggle)="onToggle($event)"
+        (supprimer)="onSupprimer($event)"
+      />
+    }
+    <p class="compteur">{{ restantes() }} tâche(s) restante(s)</p>
+    <button class="btn-reset" (click)="onReinitialiser()">↺ Réinitialiser</button>
+  }
+</div>

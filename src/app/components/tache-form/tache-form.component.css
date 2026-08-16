@@ -1,0 +1,28 @@
+.tache-form {
+  display: flex;
+  gap: 0.6rem;
+  margin: 1.5rem 0;
+}
+.tache-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  background: var(--bg-card);
+}
+.tache-form input:focus {
+  outline: none;
+  border-color: var(--brand-light);
+}
+.tache-form button {
+  padding: 0.75rem 1.4rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--brand);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.tache-form button:hover { background: var(--brand-light); }

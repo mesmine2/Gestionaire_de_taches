@@ -1,0 +1,10 @@
+
+<form class="tache-form" (submit)="$event.preventDefault(); onSubmit()">
+  <input
+    type="text"
+    placeholder="Nouvelle tâche..."
+    [value]="titreSaisi()"
+    (input)="titreSaisi.set($any($event.target).value)"
+  >
+  <button type="submit">Ajouter</button>
+</form>

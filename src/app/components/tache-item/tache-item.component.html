@@ -1,0 +1,8 @@
+
+<div class="tache" [class.terminee]="tache().completed">
+  <label>
+    <input type="checkbox" [checked]="tache().completed" (change)="onToggle()">
+    <span>{{ tache().title }}</span>
+  </label>
+  <button class="btn-supprimer" (click)="onSupprimer()">✕</button>
+</div>
