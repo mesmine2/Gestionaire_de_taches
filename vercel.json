@@ -1,6 +1,6 @@
 {
 "buildCommand": "npm run build",
-"outputDirectory": "dist/gestion-tachesgi/browser",
+"outputDirectory": "dist/gestion-taches/browser",
 "rewrites": [
 {
 "source": "/(.*)",
