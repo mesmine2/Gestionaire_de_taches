@@ -26,3 +26,11 @@
   transition: background 0.15s;
 }
 .tache-form button:hover { background: var(--brand-light); }
+@media (max-width: 480px) {
+  .tache-form {
+    flex-direction: column;
+  }
+  .tache-form button {
+    width: 100%;
+  }
+}

@@ -35,3 +35,15 @@
   transition: background 0.15s;
 }
 .btn-supprimer:hover { background: #fdecea; }
+.tache label span {
+  word-break: break-word;
+}
+
+@media (max-width: 480px) {
+  .tache {
+    padding: 0.75rem 0.9rem;
+  }
+  .tache label {
+    gap: 0.5rem;
+  }
+}

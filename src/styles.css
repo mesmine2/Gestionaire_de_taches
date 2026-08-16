@@ -25,4 +25,12 @@ main {
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem 1rem 4rem;
+  width: 100%;
+}
+
+/* Sous 480px (petit mobile) : moins de marge */
+@media (max-width: 480px) {
+  main {
+    padding: 1rem 0.75rem 3rem;
+  }
 }
